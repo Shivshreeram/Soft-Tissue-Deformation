@@ -193,13 +193,13 @@ This section showcases the training progress and performance for both the 2-Blob
 ## **Training Images from Last 15 Epochs**
 
 ### **2-Blob Model - Final Training Image**
-![Final Epoch 2-Blob](images/t2.png)
+![Final 15 Epoch 2-Blob](images/t2.png)
 - **Description:**
   - This image represents the model's predictions after training for 15 epochs.
   - Last 15 training epoch , to show that the training hasn't plateaued , but close to plateauing.
 
 ### **3-Blob Model - Final Training Image**
-![Final Epoch 3-Blob](images/t3.png)
+![Final 15 Epoch 3-Blob](images/t3.png)
 - **Description:**
   - This image represents the model's predictions after training for 15 epochs for the 3-Blob detection task.
   - Last 15 training epoch , to show that the training hasn't plateaued , but close to plateauing.
