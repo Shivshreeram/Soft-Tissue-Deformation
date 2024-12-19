@@ -219,7 +219,7 @@ This section presents images showing the model's predicted blob locations along 
 ## **Predicted Locations and Error for 2-Blob Model**
 
 ### **2-Blob Model Prediction Image**
-![Prediction Image 2-Blob](images/prediction_2blob.png)
+![Prediction Image 2-Blob](images/p2.png)
 - **Description:**
   - The image above displays the predicted blob locations for the 2-Blob model.
   - The predicted points are marked on the image (e.g., in a different color or as distinct markers).
