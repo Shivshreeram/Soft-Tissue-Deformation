@@ -12,6 +12,8 @@ To model and predict soft tissue deformation, advanced methods like **StrainNet*
 
 ## **Step 1: Blob Detection - A Foundation for Soft Tissue Deformation Analysis**
 
+![Blob-detection](../Blob-detection/README.md)
+
 Our first step into soft tissue deformation analysis begins with a simplified task: **Blob Detection**. This task helps us understand the core concept of deformation by tracking the relative positions of particles or points (blobs). These blobs are used to represent the basic elements of soft tissue under deformation.
 
 ### **Why Blob Detection?**
