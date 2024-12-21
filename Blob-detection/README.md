@@ -176,14 +176,14 @@ This section showcases the training progress and performance for both the 2-Blob
 ## **Training Loss Curves**
 
 ### **2-Blob Model Loss vs. Epochs**
-![Loss Curve for 2-Blob Model](images/tv2.png)
+![Loss Curve for 2-Blob Model](../images/tv2.png)
 - **Description:**
   - The curve shows the loss reduction over epochs during training for the 2-Blob detection model.
   - The goal is to observe a steady decline in the loss, indicating that the model is learning and improving over time.
   - The graph helps visualize the effectiveness of the optimizer and the model's convergence behavior.
 
 ### **3-Blob Model Loss vs. Epochs**
-![Loss Curve for 3-Blob Model](images/tv3.png)
+![Loss Curve for 3-Blob Model](../images/tv3.png)
 - **Description:**
   - This graph represents the loss reduction across epochs during training for the 3-Blob detection model.
   - Similar to the 2-Blob model, the curve helps evaluate how well the model is learning, showing improvements as the loss decreases over time.
@@ -193,13 +193,13 @@ This section showcases the training progress and performance for both the 2-Blob
 ## **Training Images from Last 15 Epochs**
 
 ### **2-Blob Model - Final Training Image**
-![Final 15 Epoch 2-Blob](images/t2.png)
+![Final 15 Epoch 2-Blob](../images/t2.png)
 - **Description:**
   - This image represents the model's predictions after training for 15 epochs.
   - Last 15 training epoch , to show that the training hasn't plateaued , but close to plateauing.
 
 ### **3-Blob Model - Final Training Image**
-![Final 15 Epoch 3-Blob](images/t3.png)
+![Final 15 Epoch 3-Blob](../images/t3.png)
 - **Description:**
   - This image represents the model's predictions after training for 15 epochs for the 3-Blob detection task.
   - Last 15 training epoch , to show that the training hasn't plateaued , but close to plateauing.
@@ -219,7 +219,7 @@ This section presents images showing the model's predicted blob locations along 
 ## **Predicted Locations and Error for 2-Blob Model**
 
 ### **2-Blob Model Prediction Image**
-![Prediction Image 2-Blob](images/p2.png)
+![Prediction Image 2-Blob](../images/p2.png)
 - **Description:**
   - The image above displays the predicted blob locations for the 2-Blob model.
   - The predicted points are marked on the image (e.g., in a different color or as distinct markers).
@@ -230,7 +230,7 @@ This section presents images showing the model's predicted blob locations along 
 ## **Predicted Locations and Error for 3-Blob Model**
 
 ### **3-Blob Model Prediction Image**
-![Prediction Image 3-Blob](images/p3.png)
+![Prediction Image 3-Blob](../images/p3.png)
 - **Description:**
   - The image above shows the predicted locations of all three blobs for the 3-Blob model.
   - As in the 2-Blob case, the predicted blob positions are compared with the actual values from the dataset, and the error is calculated for each coordinate.
