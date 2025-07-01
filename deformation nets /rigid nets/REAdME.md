@@ -20,7 +20,7 @@ This project implements a U-Net-based deep learning model for estimating **x** a
 
 The training was conducted for 200 epochs with early stopping and learning rate reduction on plateau.
 
-![Training vs Validation Loss](images/loss_curve.png)
+![Training vs Validation Loss](../images/tv_acc_rr.png)
 
 ---
 
@@ -28,4 +28,4 @@ The training was conducted for 200 epochs with early stopping and learning rate 
 
 A randomly selected sample from the validation set is shown below. The model successfully captures the spatial structure of both displacement components.
 
-![Prediction Results](images/prediction_visualization.png)
+![Prediction Results](../images/eg1.png)
