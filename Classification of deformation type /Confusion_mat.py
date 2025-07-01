@@ -1,4 +1,7 @@
 
+# just import the variables X_train, y_train
+
+
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 
