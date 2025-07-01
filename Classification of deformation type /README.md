@@ -49,7 +49,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 | Loss Curve | Accuracy Curve |
 |------------|----------------|
-| ![Loss](images/tv_loss.png) | ![Accuracy](./path_to_images/train_val_accuracy.png) |
+| ![Loss](../images/tv_loss.png) | ![Accuracy](./path_to_images/train_val_accuracy.png) |
 
 ### Observations
 
