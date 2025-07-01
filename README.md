@@ -34,9 +34,43 @@ By working with these synthetic datasets, we can simulate a range of soft tissue
 
 ---
 
-## **Current Progress: Working on Soft Tissue Deformation Analysis**
+#  Deformation Classification Using DeformationNet
 
-I am currently working on integrating and utilizing the synthetic data from the **StrainNet** repository to model soft tissue deformation. With the initial steps, such as blob detection, already completed, the focus is now on handling the complexities of soft tissue behavior using advanced machine learning techniques.
+To classify the type of deformation in soft tissues, I developed a model called **DeformationNet** using a Convolutional Neural Network (CNN), which is well-suited for image-based classification problems.
+
+The model was trained on synthetic strain map datasets to classify each input into one of three deformation categories:
+
+- **Compression**
+- **Rigid**
+- **Tension**
+
+## 📊 Classification Results
+
+- **Validation Accuracy:** 84.67%
+- **Training Accuracy:** 98.2%
+- **Overall Model Performance:** Consistent and stable learning with clear generalization.
+
+### 🔹 Class-wise Metrics
+
+| Class       | Precision | Recall | F1 Score |
+|-------------|-----------|--------|----------|
+| Compression | 90.2%     | 92.0%  | 91.1%    |
+| Rigid       | 82.4%     | 84.0%  | 83.2%    |
+| Tension     | 81.3%     | 78.0%  | 79.6%    |
+
+The model shows highest performance on the **Compression** class. Most of the confusion occurs between **Rigid** and **Tension**, which can be addressed with further refinements.
+
+---
+
+## **What's Next?**
+
+- Apply class-specific data augmentation to improve generalization
+- Explore deeper architectures or attention mechanisms to capture finer strain patterns
+- Begin testing with real-world soft tissue strain data
+
+The goal is to make DeformationNet a reliable and scalable model for soft tissue deformation analysis.
+
+---
 
 By leveraging the **StrainNet** dataset, I am training a model that will predict and analyze soft tissue deformations for classification of the type of deformation i.e compression, rigid, tension .
 
