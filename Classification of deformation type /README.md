@@ -1,10 +1,10 @@
-# 🧠 StrainNet: 3-Class CNN Classifier for Compression–Rigid–Tension
+#  StrainNet: 3-Class CNN Classifier for Compression–Rigid–Tension
 
 StrainNet is a Convolutional Neural Network (CNN) designed to classify strain images into three mechanical categories: **Compression**, **Rigid**, and **Tension**. It is built with TensorFlow/Keras and optimized for moderate complexity and robust regularization.
 
 ---
 
-## 📁 Dataset and Input Format
+##  Dataset and Input Format
 
 - Input Shape: `384 × 192 × 1` (grayscale strain maps)
 - Number of Classes: 3
@@ -12,7 +12,7 @@ StrainNet is a Convolutional Neural Network (CNN) designed to classify strain im
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 A 4-layer convolutional network with progressive depth and heavy regularization:
 
@@ -33,7 +33,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ---
 
-## ⚙️ Training Setup
+##  Training Setup
 
 - **Loss Function:** `sparse_categorical_crossentropy`
 - **Optimizer:** Adam (`lr = 1e-4`)
@@ -45,7 +45,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ---
 
-## 📉 Training and Validation Curves
+## Training and Validation Curves
 
 | Loss Curve | Accuracy Curve |
 |------------|----------------|
@@ -61,7 +61,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ---
 
-## 📊 Confusion Matrix (Validation Set)
+##  Confusion Matrix (Validation Set)
 
 ![Confusion Matrix](../images/con_mat.png)
 
@@ -71,7 +71,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 | **True: Rigid**       | 3                      | 42               | 5                  |
 | **True: Tension**     | 2                      | 9                | 39                 |
 
-### 📈 Derived Metrics
+###  Derived Metrics
 
 | Class       | Precision | Recall | F1 Score |
 |-------------|-----------|--------|----------|
@@ -84,7 +84,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ---
 
-## 📌 Key Insights
+##  Key Insights
 
 - Compression class is the easiest to classify (F1 ~91%).
 - Misclassifications mostly occur between **Tension** and **Rigid** classes.
@@ -93,7 +93,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ---
 
-## 🔧 Future Improvements
+##  Future Improvements
 
 1. **Advanced Architectures**  
    Introduce residual connections or attention-based CNN blocks to better distinguish subtle differences in strain.
