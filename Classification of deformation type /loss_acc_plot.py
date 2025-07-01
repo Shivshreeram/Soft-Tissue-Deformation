@@ -1,6 +1,7 @@
 
-# just use the variables history from code.py
+# just import the variables history from code.py
 
+import matplotlib.pyplot as plt
 
 # training & validation loss
 plt.plot(history.history['loss'], label='Train Loss')
