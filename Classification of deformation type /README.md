@@ -49,7 +49,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 | Loss Curve | Accuracy Curve |
 |------------|----------------|
-| ![Loss](../images/tv_loss.png) | ![Accuracy](./path_to_images/train_val_accuracy.png) |
+| ![Loss](../images/tv_loss.png) | ![Accuracy](../images/tv_acc.png) |
 
 ### Observations
 
@@ -63,7 +63,7 @@ A 4-layer convolutional network with progressive depth and heavy regularization:
 
 ## 📊 Confusion Matrix (Validation Set)
 
-![Confusion Matrix](./path_to_images/confusion_matrix.png)
+![Confusion Matrix](../images/con_mat.png)
 
 |               | Predicted: Compression | Predicted: Rigid | Predicted: Tension |
 |---------------|------------------------|------------------|--------------------|
