@@ -40,7 +40,7 @@ The training was conducted for 200 epochs with:
 
 
 **Figure 1**: Training and Validation Loss  
-![Training vs Validation Loss](images/tv_acc_rr.png)
+![Training vs Validation Loss](/images/tv_acc_rr.png)
 
 ---
 
@@ -49,4 +49,4 @@ The training was conducted for 200 epochs with:
 A randomly selected sample from the validation set is shown below. The model effectively captures the spatial structure and magnitude of both displacement components. The predictions show close alignment with the ground truth.
 
 **Figure 2**: Ground Truth vs Predicted Displacements  
-![Prediction Results](images/eg1.png)
+![Prediction Results](/images/eg1.png)
