@@ -35,11 +35,9 @@ The training was conducted for 200 epochs with:
 - Batch size: 32
 
 **Final Validation Loss**:
-- Total: **`~0.013`**
-- `y_x` (output1): **`~0.0075`**
-- `y_y` (output2): **`~0.0055`**
+- `Train` : **`~0.28`**
+- `Validation` : **`~0.36`**
 
-> *(These are example values — update them based on your actual `history.history['val_loss'][-1]` values.)*
 
 **Figure 1**: Training and Validation Loss  
 ![Training vs Validation Loss](images/tv_acc_rr.png)
