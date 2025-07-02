@@ -24,7 +24,7 @@ Blob detection serves as a controlled and simplified environment where we can si
 
 ## **Main Problem Statement: Soft Tissue Deformation Using StrainNet**
 
-With a foundational understanding of basic deformation mechanics through blob detection, we now dive into the core of the problem: modeling **soft tissue deformation** more accurately. To achieve this, we will utilize synthetic datasets that simulate the complex behavior of soft tissues under various deformation conditions.
+With a foundational understanding of basic deformation mechanics through blob detection, we now dive into the core of the problem: modeling **soft tissue deformation** more accurately. To achieve this, we utilize synthetic datasets that simulate the complex behavior of soft tissues under various deformation conditions.
 
 The next step in our process is to download and utilize the **StrainNet** dataset from an external repository. This dataset provides realistic synthetic data that mimics the deformation of soft tissues, which is essential for training and evaluating advanced models like StrainNet.
 
@@ -62,17 +62,26 @@ The model shows highest performance on the **Compression** class. Most of the co
 
 ---
 
-## **What's Next?**
+## 🧩 Deformation Map Formation
 
-- Apply class-specific data augmentation to improve generalization
-- Explore deeper architectures or attention mechanisms to capture finer strain patterns
-- Begin testing with real-world soft tissue strain data
+After classifying the type of deformation, the next step is to generate **deformation maps** that represent the displacement across the soft tissue surface. This involves predicting pixel-wise displacements (strain fields) using U-Net.
 
-The goal is to make DeformationNet a reliable and scalable model for soft tissue deformation analysis.
+### 🔬 U-Net-Based Deformation Prediction
+
+To achieve this, I trained a **U-Net** model that takes in a differential grayscale image and outputs:
+
+- **x-direction displacement map (`y_x`)**
+- **y-direction displacement map (`y_y`)**
+
+The model is designed as a deep U-Net with 6 encoder-decoder blocks and skip connections for spatial precision. Each output is supervised using Huber loss to balance smoothness and robustness.
+
+### 📉 U-Net Training Results
+
+- **Training Loss:** 0.28  
+- **Validation Loss:** 0.36
+
+This shows good generalization ability, and qualitative results indicate that the predicted displacement maps are spatially coherent and capture local deformation trends accurately.
 
 ---
 
-By leveraging the **StrainNet** dataset, I am training a model that will predict and analyze soft tissue deformations for classification of the type of deformation i.e compression, rigid, tension .
-
-Stay tuned as I progress through this exciting journey into soft tissue deformation analysis!
-
+By leveraging the **StrainNet** dataset, I am training a model that will predict and analyze soft tissue deformations and classify them as **compression**, **rigid**, or **tension**, while also generating the corresponding **displacement maps** using U-Net.
